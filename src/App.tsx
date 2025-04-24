@@ -9,7 +9,7 @@ const App = () => {
     set(ref(db, "users/jatin"), {
       id: 1,
       name: "Jatin",
-      age: 21,
+      age: 22,
     }),
   ]
   return (
