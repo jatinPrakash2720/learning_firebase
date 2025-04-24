@@ -1,22 +1,22 @@
 // Authentication Tutorial
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
-import { app } from "./firebase"
+// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
+// import { app } from "./firebase"
+import SignupPage from "./pages/Signup"
 import "./App.css"
-const auth = getAuth(app)
+// const auth = getAuth(app)
 const App = () => {
-  const signupUser = () => {
-    createUserWithEmailAndPassword(
-      auth,
-      "jatin.prakash.2720@gmail.com",
-      "JatinJatin"
-    ).then((value) => {
-      console.log(value)
-    })
-  }
+  // const signupUser = () => {
+  //   createUserWithEmailAndPassword(
+  //     auth,
+  //     "jatin.prakash.2720@gmail.com",
+  //     "JatinJatin"
+  //   ).then((value) => {
+  //     console.log(value)
+  //   })
+  // }
   return (
     <div>
-      <h1>Firebase React App</h1>
-      <button onClick={signupUser}>Create User</button>
+      <SignupPage />
     </div>
   )
 }
